@@ -73,6 +73,7 @@ class _HomeContainerState extends State<_HomeContainer> {
       children: [
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Divider(
               height: 1,
@@ -81,28 +82,26 @@ class _HomeContainerState extends State<_HomeContainer> {
             ),
             Flexible(
               child: Container(
-                constraints: BoxConstraints(minHeight: 85,maxHeight: 90),
+                constraints: BoxConstraints(minHeight: 98,maxHeight: 120),
                 child: ListView(
-                  shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  padding: EdgeInsets.only(top: 10),
                   children: <Widget>[
-                    AvatarWidget("assets/images/account-img-test.png", "baonh", 62, 62),
-                    AvatarWidget("assets/images/account-img-test2.png", "baonh", 62, 62),
-                    AvatarWidget("assets/images/account-img-test3.png", "baonh", 62, 62),
-                    AvatarWidget("assets/images/account-img-test4.png", "baonh", 62, 62),
-                    AvatarWidget("assets/images/account-img-test5.png", "baonh", 62, 62),
-                    AvatarWidget("assets/images/account-img-test.png", "baonh", 62, 62),
-                    AvatarWidget("assets/images/account-img-test2.png", "baonh", 62, 62),
+                    AvatarWidget("assets/images/account-img-test.png", "baonh1", 62, 81),
+                    AvatarWidget("assets/images/account-img-test2.png", "baonh2", 62, 81),
+                    AvatarWidget("assets/images/account-img-test3.png", "baonh3", 62, 81),
+                    AvatarWidget("assets/images/account-img-test4.png", "baonh4", 62, 81),
+                    AvatarWidget("assets/images/account-img-test5.png", "baonh5", 62, 81),
+                    AvatarWidget("assets/images/account-img-test.png", "baonh6", 62, 81),
+                    AvatarWidget("assets/images/account-img-test2.png", "baonh7", 62, 81),
                   ],
                 ),
               ),
             ),
-            const Divider(
+          /*  const Divider(
               height: 1,
               thickness: 1,
               color: Colors.grey,
-            )
+            )*/
           ],
         )
 
