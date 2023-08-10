@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "634459861557",
+    "project_id": "instagram-baonh",
+    "storage_bucket": "instagram-baonh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634459861557:android:92c44b97b6d6af2a50377c",
+        "android_client_info": {
+          "package_name": "com.example.insta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634459861557-svkchqo8ekdjuo8spgge8vutuavs3cpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7q1i6eFvF27mn-WDSfzHaoA493hj3t2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634459861557-svkchqo8ekdjuo8spgge8vutuavs3cpq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "634459861557-f6pi700tlhoddc8ns81kv26ue48792ll.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.insta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
