@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:insta/responsive/mobile_screen_layout.dart';
 import 'package:insta/responsive/responsive_layout.dart';
 import 'package:insta/responsive/web_screen_layout.dart';
+import 'package:insta/screens/login_screen.dart';
+import 'package:insta/utils/colors.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,14 +33,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'BaoNH',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: ResponsiveLayout(
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
+     /* home: ResponsiveLayout(
         mobileScreenLayout: MobileScreenLayout(),
         webScreenLayout: WebScreenLayout(),
-      ),
+      ),*/
+      home: LoginScreen(),
     );
   }
 }

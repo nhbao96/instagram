@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:insta/screens/login_screen.dart';
 
 class MobileScreenLayout extends StatefulWidget {
   const MobileScreenLayout({Key? key}) : super(key: key);
@@ -10,8 +11,6 @@ class MobileScreenLayout extends StatefulWidget {
 class _MobileScreenLayoutState extends State<MobileScreenLayout> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text("Mobile layout")),
-    );
+    return Scaffold(body: Center(child: Text("Mobile screen"),),);
   }
 }
