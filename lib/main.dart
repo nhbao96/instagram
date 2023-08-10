@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:insta/responsive/mobile_screen_layout.dart';
 import 'package:insta/responsive/responsive_layout.dart';
@@ -6,7 +7,18 @@ import 'package:insta/responsive/web_screen_layout.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  if(kIsWeb){
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(apiKey: "AIzaSyAkquHGNYeWvfov8aIVzb9HR2WDGZLnkCA",
+                              appId: "1:634459861557:web:7909a0effb6a785f50377c",
+                              messagingSenderId: "634459861557",
+                              projectId: "instagram-baonh",
+        authDomain: "instagram-baonh.firebaseapp.com",
+      storageBucket: "instagram-baonh.appspot.com",)
+    );
+  }else{
+    await Firebase.initializeApp();
+  }
   runApp(const MyApp());
 }
 
